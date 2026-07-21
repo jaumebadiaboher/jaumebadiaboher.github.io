@@ -97,5 +97,5 @@ document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click
 }));
 
 renderPubs();
-renderSoftware();
+if (document.getElementById('softwareCards')) renderSoftware(); // section is hidden for now — see index.html
 renderTimeline();
