@@ -123,11 +123,12 @@ p{ margin: 0 0 1em; }
 }
 .hero-meta{
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.85rem;
-  color: var(--muted);
+  font-size: 0.9rem;
+  color: rgba(239,234,220,0.82);
   margin-bottom: 2rem;
+  letter-spacing: 0.01em;
 }
-.hero-meta .dot{ margin: 0 0.5em; }
+.hero-meta .dot{ margin: 0 0.5em; color: var(--gold-soft); }
 .hero-links{ display: flex; gap: 0.9rem; flex-wrap: wrap; }
 
 .btn{
@@ -169,7 +170,7 @@ p{ margin: 0 0 1em; }
 .lede-small{ font-size: 0.92rem; margin-top: 0.4em; }
 
 /* pillars */
-.pillars{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6rem; margin-top: 2.4rem; }
+.pillars{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.6rem; margin-top: 2.4rem; }
 .pillar{ padding: 1.8rem; background: var(--paper); border: 1px solid var(--line-dark); border-radius: var(--radius); }
 .pillar-icon{ width: 34px; height: 34px; color: var(--teal); margin-bottom: 1rem; }
 .pillar h3{ font-size: 1.15rem; margin-bottom: 0.5rem; }
@@ -246,7 +247,10 @@ a:focus-visible, button:focus-visible{ outline: 2px solid var(--teal); outline-o
 }
 
 /* responsive */
-@media (max-width: 860px){
+@media (max-width: 980px){
+  .pillars{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px){
   .pillars{ grid-template-columns: 1fr; }
 }
 @media (max-width: 720px){
