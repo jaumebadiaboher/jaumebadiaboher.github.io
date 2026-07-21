@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaume A. Badia-Boher — Statistical Ecology</title>
+<meta name="description" content="Jaume A. Badia-Boher — Postdoctoral Researcher in Statistical Ecology, Swiss Ornithological Institute. Bayesian population models, integrated population models, mark-recapture.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="#top" class="nav-brand">JAB</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="navLinks">
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#software">Software &amp; Tutorials</a>
+    <a href="#timeline">Career</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <svg class="hero-trend" viewBox="0 0 1200 500" preserveAspectRatio="none" aria-hidden="true">
+    <path class="trend-line" d="M0,420 C120,410 160,340 220,320 C300,295 340,360 400,330 C470,295 500,180 570,190 C640,200 660,300 730,270 C810,235 840,90 920,95 C990,100 1030,180 1100,150 C1150,130 1180,110 1200,80" />
+    <g class="trend-dots">
+      <circle cx="220" cy="320" r="4"/>
+      <circle cx="400" cy="330" r="4"/>
+      <circle cx="570" cy="190" r="4"/>
+      <circle cx="730" cy="270" r="4"/>
+      <circle cx="920" cy="95" r="4"/>
+      <circle cx="1100" cy="150" r="4"/>
+    </g>
+  </svg>
+
+  <div class="hero-inner">
+    <p class="eyebrow">Postdoctoral Researcher · Statistical Ecology</p>
+    <h1>Jaume A.<br>Badia&#8209;Boher</h1>
+    <p class="hero-tagline">I build Bayesian models that turn scattered field data — capture histories,
+      territory surveys, dead recoveries — into evidence for how populations grow, move, and decline.</p>
+    <div class="hero-meta">
+      <span>Swiss Ornithological Institute · Sempach</span>
+      <span class="dot">·</span>
+      <span>Vogelwarte</span>
+    </div>
+    <div class="hero-links">
+      <a href="mailto:jaume.badia@vogelwarte.ch" class="btn btn-primary">Get in touch</a>
+      <a href="https://orcid.org/0000-0003-2162-6355" class="btn btn-ghost" target="_blank" rel="noopener">ORCID</a>
+      <a href="#" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+  <a href="#research" class="scroll-cue" aria-label="Scroll to research">
+    <span></span>
+  </a>
+</header>
+
+<main>
+
+  <section class="section" id="research">
+    <div class="section-head">
+      <p class="eyebrow">01 · What I study</p>
+      <h2>Making demography spatial</h2>
+    </div>
+    <p class="lede">My work spans spatially explicit demographic models, integrated population models,
+      mark&#8209;recapture frameworks, and species distribution models — with a focus on turning
+      demographic inference into evidence&#8209;based management.</p>
+
+    <div class="pillars">
+      <article class="pillar">
+        <svg class="pillar-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4C14 4 6 12 6 22c0 14 18 22 18 22s18-8 18-22C42 12 34 4 24 4z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="21" r="6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        <h3>Spatial demography</h3>
+        <p>Integrated population models that let survival, productivity, and dispersal vary in space —
+          not just in time — and correct the biases that arise when they don't.</p>
+      </article>
+      <article class="pillar">
+        <svg class="pillar-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 30 L16 14 L26 26 L34 10 L42 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="42" cy="22" r="2.5" fill="currentColor"/></svg>
+        <h3>Disease &amp; resilience</h3>
+        <p>Evaluating how emerging wildlife diseases — including the recent HPAI panzootic — reshape
+          demographic rates and long-term population resilience.</p>
+      </article>
+      <article class="pillar">
+        <svg class="pillar-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="26" width="8" height="14" fill="none" stroke="currentColor" stroke-width="2"/><rect x="20" y="16" width="8" height="24" fill="none" stroke="currentColor" stroke-width="2"/><rect x="33" y="8" width="8" height="32" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        <h3>Methods &amp; computation</h3>
+        <p>Bayesian hierarchical modelling in JAGS/NIMBLE, simulation studies, and faster computational
+          frameworks for fitting mark-recapture and distance-sampling models at scale.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="publications">
+    <div class="section-head">
+      <p class="eyebrow">02 · Selected output</p>
+      <h2>Publications</h2>
+      <p class="lede lede-small">128 citations · h-index 4 (as of June 2026)</p>
+    </div>
+
+    <div class="pub-list" id="pubListMain">
+      <!-- Selected publications populated here -->
+    </div>
+
+    <button class="btn btn-ghost btn-toggle" id="togglePubs">Show full publication list ↓</button>
+
+    <div class="pub-list pub-list-full" id="pubListFull" hidden>
+      <!-- Full list populated here -->
+    </div>
+  </section>
+
+  <section class="section" id="software">
+    <div class="section-head">
+      <p class="eyebrow">03 · Open &amp; reproducible</p>
+      <h2>Software &amp; tutorials</h2>
+    </div>
+    <p class="lede">Code behind the papers above, and teaching material from the Bayesian population
+      analysis workshops I run — released so others can reuse, adapt, and build on it.</p>
+
+    <div class="cards" id="softwareCards">
+      <!-- populated by script.js -->
+    </div>
+  </section>
+
+  <section class="section section-alt" id="timeline">
+    <div class="section-head">
+      <p class="eyebrow">04 · Career so far</p>
+      <h2>Path to here</h2>
+    </div>
+    <ol class="timeline" id="timelineList">
+      <!-- populated by script.js -->
+    </ol>
+  </section>
+
+  <section class="section" id="cv">
+    <div class="cv-box">
+      <div>
+        <p class="eyebrow">05 · Full record</p>
+        <h2>Curriculum vitae</h2>
+        <p class="lede lede-small">Full employment history, education, grants, teaching, supervision,
+          and media coverage.</p>
+      </div>
+      <a href="CV_BadiaBoher.pdf" class="btn btn-primary" download>Download PDF ↓</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" id="contact">
+  <div class="footer-inner">
+    <div>
+      <p class="footer-name">Jaume A. Badia-Boher</p>
+      <p class="footer-role">Swiss Ornithological Institute · Sempach, Switzerland</p>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:jaume.badia@vogelwarte.ch">Email</a>
+      <a href="https://orcid.org/0000-0003-2162-6355" target="_blank" rel="noopener">ORCID</a>
+      <a href="#" target="_blank" rel="noopener">GitHub</a>
+      <a href="#" target="_blank" rel="noopener">Google Scholar</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
