@@ -18,13 +18,19 @@
     <span></span><span></span><span></span>
   </button>
   <div class="nav-links" id="navLinks">
-    <a href="#research">Research</a>
-    <a href="#publications">Publications</a>
+    <a href="#research" data-i18n="nav_research">Research</a>
+    <a href="#publications" data-i18n="nav_publications">Publications</a>
+    <a href="#collaborate" data-i18n="nav_collaborate">Collaborate</a>
     <!-- Software & Tutorials nav link hidden until repos exist. Re-add when ready:
     <a href="#software">Software &amp; Tutorials</a> -->
-    <a href="#timeline">Career</a>
-    <a href="#cv">CV</a>
-    <a href="#contact">Contact</a>
+    <a href="#timeline" data-i18n="nav_career">Career</a>
+    <a href="#cv" data-i18n="nav_cv">CV</a>
+    <a href="#contact" data-i18n="nav_contact">Contact</a>
+    <div class="lang-switch" id="langSwitch">
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+      <span class="lang-sep">·</span>
+      <button type="button" class="lang-btn" data-lang="ca" aria-pressed="false">CA</button>
+    </div>
   </div>
 </nav>
 
@@ -42,9 +48,9 @@
   </svg>
 
   <div class="hero-inner">
-    <p class="eyebrow">Postdoctoral Researcher · Statistical Ecology</p>
+    <p class="eyebrow" data-i18n="hero_eyebrow">Postdoctoral Researcher · Statistical Ecology</p>
     <h1>Jaume A.<br>Badia&#8209;Boher</h1>
-    <p class="hero-tagline">I build Bayesian models that turn scattered field data — capture histories,
+    <p class="hero-tagline" data-i18n="hero_tagline">I build Bayesian models that turn scattered field data — capture histories,
       territory surveys, dead recoveries — into evidence for how populations grow, move, and decline,
       and into insights that management and conservation can actually act on.</p>
     <div class="hero-meta">
@@ -53,7 +59,7 @@
       <span>Vogelwarte</span>
     </div>
     <div class="hero-links">
-      <a href="mailto:jaume.badia@vogelwarte.ch" class="btn btn-primary">Get in touch</a>
+      <a href="mailto:jaume.badia@vogelwarte.ch" class="btn btn-primary" data-i18n="hero_btn_contact">Get in touch</a>
       <a href="https://orcid.org/0000-0003-2162-6355" class="btn btn-ghost" target="_blank" rel="noopener">ORCID</a>
       <a href="https://github.com/jaumebadiaboher" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
     </div>
@@ -67,36 +73,36 @@
 
   <section class="section" id="research">
     <div class="section-head">
-      <p class="eyebrow">01 · What I study</p>
-      <h2>Making demography spatial</h2>
+      <p class="eyebrow" data-i18n="research_eyebrow">01 · What I study</p>
+      <h2 data-i18n="research_h2">Making demography spatial</h2>
     </div>
-    <p class="lede">My work spans spatially explicit demographic models, integrated population models,
+    <p class="lede" data-i18n="research_lede">My work spans spatially explicit demographic models, integrated population models,
       mark&#8209;recapture frameworks, and species distribution models — with a focus on turning
       demographic inference into evidence&#8209;based management.</p>
 
     <div class="pillars">
       <article class="pillar">
         <svg class="pillar-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4C14 4 6 12 6 22c0 14 18 22 18 22s18-8 18-22C42 12 34 4 24 4z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="21" r="6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
-        <h3>Spatial demography</h3>
-        <p>Integrated population models that let survival, productivity, and dispersal vary in space —
+        <h3 data-i18n="pillar1_title">Spatial demography</h3>
+        <p data-i18n="pillar1_desc">Integrated population models that let survival, productivity, and dispersal vary in space —
           not just in time — and correct the biases that arise when they don't.</p>
       </article>
       <article class="pillar">
         <svg class="pillar-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 30 L16 14 L26 26 L34 10 L42 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="42" cy="22" r="2.5" fill="currentColor"/></svg>
-        <h3>Disease &amp; resilience</h3>
-        <p>Evaluating how emerging wildlife diseases — including the recent HPAI panzootic — reshape
+        <h3 data-i18n="pillar2_title">Disease &amp; resilience</h3>
+        <p data-i18n="pillar2_desc">Evaluating how emerging wildlife diseases — including the recent HPAI panzootic — reshape
           demographic rates and long-term population resilience.</p>
       </article>
       <article class="pillar">
         <svg class="pillar-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="26" width="8" height="14" fill="none" stroke="currentColor" stroke-width="2"/><rect x="20" y="16" width="8" height="24" fill="none" stroke="currentColor" stroke-width="2"/><rect x="33" y="8" width="8" height="32" fill="none" stroke="currentColor" stroke-width="2"/></svg>
-        <h3>Methods &amp; computation</h3>
-        <p>Bayesian hierarchical modelling in JAGS/NIMBLE, simulation studies, and faster computational
+        <h3 data-i18n="pillar3_title">Methods &amp; computation</h3>
+        <p data-i18n="pillar3_desc">Bayesian hierarchical modelling in JAGS/NIMBLE, simulation studies, and faster computational
           frameworks for fitting mark-recapture and distance-sampling models at scale.</p>
       </article>
       <article class="pillar">
         <svg class="pillar-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5 L40 12 V22 C40 33 33 41 24 44 C15 41 8 33 8 22 V12 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M17 23 L22 28 L32 17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <h3>Conservation applications</h3>
-        <p>Translating demographic inference into insights that are directly usable by managers and
+        <h3 data-i18n="pillar4_title">Conservation applications</h3>
+        <p data-i18n="pillar4_desc">Translating demographic inference into insights that are directly usable by managers and
           conservation practitioners — not just academic outputs.</p>
       </article>
     </div>
@@ -104,9 +110,9 @@
 
   <section class="section section-alt" id="publications">
     <div class="section-head">
-      <p class="eyebrow">02 · Selected output</p>
-      <h2>Publications</h2>
-      <p class="lede lede-small">128 citations · h-index 4 (as of June 2026)</p>
+      <p class="eyebrow" data-i18n="pub_eyebrow">02 · Selected output</p>
+      <h2 data-i18n="pub_h2">Publications</h2>
+      <p class="lede lede-small" data-i18n="pub_lede_small">128 citations · h-index 4 (as of June 2026)</p>
     </div>
 
     <div class="pub-list" id="pubListMain">
@@ -122,11 +128,11 @@
 
   <!-- Software & tutorials section hidden until real repos exist.
        To bring it back: uncomment this block, restore the nav link in the <nav> above,
-       and change the eyebrow numbers below back to 03/04/05. -->
+       and change the eyebrow numbers below (this becomes 04, and Career/CV each shift +1 to 05/06). -->
   <!--
   <section class="section" id="software">
     <div class="section-head">
-      <p class="eyebrow">03 · Open &amp; reproducible</p>
+      <p class="eyebrow">04 · Open &amp; reproducible</p>
       <h2>Software &amp; tutorials</h2>
     </div>
     <p class="lede">Code behind the papers above, and teaching material from the Bayesian population
@@ -138,10 +144,93 @@
   </section>
   -->
 
+  <section class="section" id="collaborate">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="collab_eyebrow">03 · Collaborations</p>
+      <h2 data-i18n="collab_h2">Collaborations</h2>
+    </div>
+    <p class="lede" data-i18n="collab_lede">From time to time I'm approached by researchers, NGOs, or public administrations with a
+      dataset and a question about what it's telling them — is a population declining, and why?
+      Below are the kinds of data I most often work with. If that sounds like your situation, get
+      in touch — depending on my schedule I may not always be able to take it on, but I'm always
+      happy to hear about it.</p>
+
+    <div class="cards">
+      <div class="card">
+        <svg class="pillar-icon" viewBox="0 0 48 48" aria-hidden="true">
+          <rect x="6" y="6" width="10" height="10" fill="currentColor"/>
+          <rect x="19" y="6" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"/>
+          <rect x="32" y="6" width="10" height="10" fill="currentColor"/>
+          <rect x="6" y="19" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"/>
+          <rect x="19" y="19" width="10" height="10" fill="currentColor"/>
+          <rect x="32" y="19" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"/>
+          <rect x="6" y="32" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"/>
+          <rect x="19" y="32" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"/>
+          <rect x="32" y="32" width="10" height="10" fill="currentColor"/>
+        </svg>
+        <h3 data-i18n="card1_title">Occupancy &amp; distribution</h3>
+        <p data-i18n="card1_desc">Presence/absence data: single-season and dynamic occupancy models, species distribution
+          models, and power analyses for monitoring design.</p>
+      </div>
+      <div class="card">
+        <svg class="pillar-icon" viewBox="0 0 48 48" aria-hidden="true">
+          <rect x="6" y="30" width="6" height="10" fill="currentColor" opacity="0.35"/>
+          <rect x="15" y="20" width="6" height="20" fill="currentColor" opacity="0.35"/>
+          <rect x="24" y="26" width="6" height="14" fill="currentColor" opacity="0.35"/>
+          <rect x="33" y="14" width="6" height="26" fill="currentColor" opacity="0.35"/>
+          <path d="M6 33 C15 26 24 24 33 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <h3 data-i18n="card2_title">Counts &amp; abundance</h3>
+        <p data-i18n="card2_desc">N-mixture models and state-space models for time series of counts, separating true
+          population change from observation noise.</p>
+      </div>
+      <div class="card">
+        <svg class="pillar-icon" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="4" fill="currentColor"/>
+          <circle cx="24" cy="24" r="12" fill="none" stroke="currentColor" stroke-width="2"/>
+          <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="3 3"/>
+          <circle cx="34" cy="16" r="2" fill="currentColor"/>
+          <circle cx="14" cy="32" r="2" fill="currentColor"/>
+        </svg>
+        <h3 data-i18n="card3_title">Distance sampling</h3>
+        <p data-i18n="card3_desc">Simple and generalized hierarchical distance sampling, including simulation-based
+          assessments of abundance and detectability.</p>
+      </div>
+      <div class="card">
+        <svg class="pillar-icon" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="18" cy="24" r="14" fill="none" stroke="currentColor" stroke-width="2"/>
+          <circle cx="30" cy="24" r="14" fill="none" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <h3 data-i18n="card4_title">Mark-recapture &amp; ringing data</h3>
+        <p data-i18n="card4_desc">Single-state, multistate, dead-recovery, and joint live-dead models built from
+          capture histories and ringing data.</p>
+      </div>
+      <div class="card">
+        <svg class="pillar-icon" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M6 10 L20 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M6 24 L20 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M6 38 L20 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="6" cy="10" r="2.5" fill="currentColor"/>
+          <circle cx="6" cy="24" r="2.5" fill="currentColor"/>
+          <circle cx="6" cy="38" r="2.5" fill="currentColor"/>
+          <circle cx="24" cy="24" r="5" fill="currentColor"/>
+          <path d="M29 24 L42 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <h3 data-i18n="card5_title">Data integration</h3>
+        <p data-i18n="card5_desc">Integrated population models that combine survival, productivity, counts, and other
+          data streams into one coherent demographic picture.</p>
+      </div>
+    </div>
+
+    <p class="lede lede-small" style="margin-top: 2rem;" data-i18n-html="collab_cta_html">If you
+      think I could help with something like this — a quick question or a longer collaboration —
+      <a href="#contact" class="pub-link">get in touch</a>.</p>
+  </section>
+
   <section class="section" id="timeline">
     <div class="section-head">
-      <p class="eyebrow">03 · Career so far</p>
-      <h2>Path to here</h2>
+      <p class="eyebrow" data-i18n="career_eyebrow">04 · Career so far</p>
+      <h2 data-i18n="career_h2">Path to here</h2>
     </div>
     <ol class="timeline" id="timelineList">
       <!-- populated by script.js -->
@@ -151,12 +240,12 @@
   <section class="section" id="cv">
     <div class="cv-box">
       <div>
-        <p class="eyebrow">04 · Full record</p>
-        <h2>Curriculum vitae</h2>
-        <p class="lede lede-small">Full employment history, education, grants, teaching, supervision,
+        <p class="eyebrow" data-i18n="cv_eyebrow">05 · Full record</p>
+        <h2 data-i18n="cv_h2">Curriculum vitae</h2>
+        <p class="lede lede-small" data-i18n="cv_lede_small">Full employment history, education, grants, teaching, supervision,
           and media coverage.</p>
       </div>
-      <a href="CV_BadiaBoher.pdf" class="btn btn-primary" download>Download PDF ↓</a>
+      <a href="CV_BadiaBoher.pdf" class="btn btn-primary" download data-i18n="cv_btn">Download PDF ↓</a>
     </div>
   </section>
 
@@ -166,10 +255,10 @@
   <div class="footer-inner">
     <div>
       <p class="footer-name">Jaume A. Badia-Boher</p>
-      <p class="footer-role">Swiss Ornithological Institute · Sempach, Switzerland</p>
+      <p class="footer-role" data-i18n="footer_role">Swiss Ornithological Institute · Sempach, Switzerland</p>
     </div>
     <div class="footer-links">
-      <a href="mailto:jaume.badia@vogelwarte.ch">Email</a>
+      <a href="mailto:jaume.badia@vogelwarte.ch" data-i18n="footer_email">Email</a>
       <a href="https://orcid.org/0000-0003-2162-6355" target="_blank" rel="noopener">ORCID</a>
       <a href="https://github.com/jaumebadiaboher" target="_blank" rel="noopener">GitHub</a>
       <a href="https://scholar.google.cat/citations?user=DwBFxt8AAAAJ&hl=ca&oi=ao" target="_blank" rel="noopener">Google Scholar</a>
@@ -178,5 +267,6 @@
 </footer>
 
 <script src="script.js"></script>
+<script src="i18n.js"></script>
 </body>
 </html>
