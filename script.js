@@ -82,8 +82,15 @@ function renderTimeline(){
 document.getElementById('togglePubs').addEventListener('click', (e) => {
   const full = document.getElementById('pubListFull');
   const hidden = full.hasAttribute('hidden');
-  if (hidden){ full.removeAttribute('hidden'); e.target.textContent = 'Show fewer ↑'; }
-  else { full.setAttribute('hidden', ''); e.target.textContent = 'Show full publication list ↓'; }
+  const lang = (typeof currentLang !== 'undefined') ? currentLang : 'en';
+  const labels = (typeof translations !== 'undefined' && translations[lang]) ? translations[lang] : null;
+  if (hidden){
+    full.removeAttribute('hidden');
+    e.target.textContent = labels ? labels.toggle_hide : 'Show fewer ↑';
+  } else {
+    full.setAttribute('hidden', '');
+    e.target.textContent = labels ? labels.toggle_show : 'Show full publication list ↓';
+  }
 });
 
 document.getElementById('navToggle').addEventListener('click', (e) => {
