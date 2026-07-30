@@ -26,7 +26,7 @@ const fullPubs = [
 
 // Add more cards here as new repos go live.
 const softwareCards = [
-  { title: "hpai-demographic-impact", desc: "A Quarto tutorial walking through the peregrine falcon HPAI panzootic paper: building the integrated population model step by step, from raw data to the resilience analysis, with live code fetching the published data and posterior from Zenodo.", link: "https://github.com/jaumebadiaboher/hpai-demographic-impact", linkText: "View repo →" },
+  { title: "hpai-demography", desc: "A Quarto tutorial walking through the peregrine falcon HPAI panzootic paper: building the integrated population model step by step, from raw data to the resilience analysis, with live code fetching the published data and posterior from Zenodo.", link: "https://github.com/jaumebadiaboher/hpai-demography", linkText: "View repo →" },
 ];
 
 const timeline = [
