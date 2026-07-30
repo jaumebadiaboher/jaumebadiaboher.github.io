@@ -25,8 +25,9 @@ const fullPubs = [
 ];
 
 // Add more cards here as new repos go live.
+// repoLink -> the GitHub repo. viewLink -> the rendered output (e.g. GitHub Pages), omit if none yet.
 const softwareCards = [
-  { title: "hpai-demography", desc: "A Quarto tutorial walking through the peregrine falcon HPAI panzootic paper: building the integrated population model step by step, from raw data to the resilience analysis, with live code fetching the published data and posterior from Zenodo.", link: "https://github.com/jaumebadiaboher/hpai-demography", linkText: "View repo →" },
+  { title: "hpai-demography", desc: "A Quarto tutorial walking through the peregrine falcon HPAI panzootic paper: building the integrated population model step by step, from raw data to the resilience analysis, with live code fetching the published data and posterior from Zenodo.", repoLink: "https://github.com/jaumebadiaboher/hpai-demography", viewLink: "https://jaumebadiaboher.github.io/hpai-demography/hpai_tutorial.html" },
 ];
 
 const timeline = [
@@ -62,7 +63,10 @@ function renderSoftware(){
     <div class="card">
       <h3>${c.title}</h3>
       <p>${c.desc}</p>
-      <a class="pub-link" href="${c.link}" target="_blank" rel="noopener">${c.linkText}</a>
+      <div class="card-links">
+        <a class="pub-link" href="${c.repoLink}" target="_blank" rel="noopener">View repo →</a>
+        ${c.viewLink ? `<a class="pub-link" href="${c.viewLink}" target="_blank" rel="noopener">Read tutorial →</a>` : ''}
+      </div>
     </div>`).join('');
 }
 
