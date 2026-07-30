@@ -24,12 +24,9 @@ const fullPubs = [
   { num: 17, tag: "Report", title: "Estudio sobre la viabilidad de la extracción de pollos en la población de águila de Bonelli en Mallorca.", meta: "Technical report, Universitat de Barcelona & Aquila A-LIFE (2021)", doi: null },
 ];
 
-// Replace '#' with real repo URLs once created on GitHub.
+// Add more cards here as new repos go live.
 const softwareCards = [
-  { title: "spatial-ipm", desc: "Bayesian integrated population model with spatially varying demographic rates (NIMBLE), from the territory-occupancy + CMR paper.", link: "#", linkText: "View repo →" },
-  { title: "cmr-speedup", desc: "Computational framework for faster fitting of multistate capture-recapture models — the basis for an upcoming R package.", link: "#", linkText: "View repo →" },
-  { title: "bayes-pop-workshop", desc: "Teaching material from the 'Bayesian population analysis using NIMBLE and JAGS' workshop series, with worked examples.", link: "#", linkText: "View repo →" },
-  { title: "hpai-demographic-impact", desc: "Code and simulated data for evaluating demographic impacts of the avian influenza panzootic on long-lived birds.", link: "#", linkText: "View repo →" },
+  { title: "hpai-demographic-impact", desc: "A Quarto tutorial walking through the peregrine falcon HPAI panzootic paper: building the integrated population model step by step, from raw data to the resilience analysis, with live code fetching the published data and posterior from Zenodo.", link: "https://github.com/jaumebadiaboher/hpai-demographic-impact", linkText: "View repo →" },
 ];
 
 const timeline = [
@@ -82,15 +79,8 @@ function renderTimeline(){
 document.getElementById('togglePubs').addEventListener('click', (e) => {
   const full = document.getElementById('pubListFull');
   const hidden = full.hasAttribute('hidden');
-  const lang = (typeof currentLang !== 'undefined') ? currentLang : 'en';
-  const labels = (typeof translations !== 'undefined' && translations[lang]) ? translations[lang] : null;
-  if (hidden){
-    full.removeAttribute('hidden');
-    e.target.textContent = labels ? labels.toggle_hide : 'Show fewer ↑';
-  } else {
-    full.setAttribute('hidden', '');
-    e.target.textContent = labels ? labels.toggle_show : 'Show full publication list ↓';
-  }
+  if (hidden){ full.removeAttribute('hidden'); e.target.textContent = 'Show fewer ↑'; }
+  else { full.setAttribute('hidden', ''); e.target.textContent = 'Show full publication list ↓'; }
 });
 
 document.getElementById('navToggle').addEventListener('click', (e) => {
