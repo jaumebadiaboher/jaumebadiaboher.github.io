@@ -187,6 +187,7 @@ p{ margin: 0 0 1em; }
 
 /* publications */
 .pub-list{ display: flex; flex-direction: column; gap: 0; margin-top: 1rem; }
+.pub-list-full[hidden]{ display: none; }
 .pub-item{
   display: grid; grid-template-columns: 2.2rem 1fr; gap: 1rem;
   padding: 1.3rem 0; border-top: 1px solid var(--line-dark);
@@ -212,6 +213,7 @@ p{ margin: 0 0 1em; }
 }
 .card h3{ font-size: 1.05rem; }
 .card p{ font-size: 0.9rem; color: var(--ink-soft); margin: 0; flex-grow: 1; }
+.card-links{ display: flex; gap: 1.2rem; flex-wrap: wrap; }
 .card .pub-link{ align-self: flex-start; }
 
 /* timeline */
